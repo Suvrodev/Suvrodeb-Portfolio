@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Banner.css";
 import "./BannerText.css";
 import bgImage from "../../../assets/bgImage/Bg-4.jpg";
+import bounceImage from "../../../assets/Banner/down-chevron.svg";
+
 const Banner = () => {
   const droplets = 70;
   const [rainDrops, setRainDrops] = useState([]);
@@ -53,12 +55,12 @@ const Banner = () => {
 
         {/* Text start */}
         <div className="absolute">
-          <h1 class="heading-primary">
-            <span class="heading-primary-main">
+          <h1 className="heading-primary">
+            <span className="heading-primary-main">
               Frontend
-              <span class="animate-text">javascript react </span>Development
+              <span className="animate-text">javascript react </span>Development
             </span>
-            <span class="heading-primary-sub">
+            <span className="heading-primary-sub">
               Specializing in custom web development. If you are a business
               seeking a web presence or are looking to hire, contact me
               <span>
@@ -68,6 +70,20 @@ const Banner = () => {
               </span>
             </span>
           </h1>
+
+          <div className="flex justify-center mb-10">
+            <button className="btn bg-white hover:bg-white text-black rounded-2xl">
+              Get Started
+            </button>
+          </div>
+
+          {/* <div className="relative"> */}
+          <div className="arrow ">
+            <a href="https://sharmin-portfolio.netlify.app/#about">
+              <img src={bounceImage} alt="" className="arrowImage" />
+            </a>
+          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>

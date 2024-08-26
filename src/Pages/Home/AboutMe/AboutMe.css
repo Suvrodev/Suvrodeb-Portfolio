@@ -1,0 +1,28 @@
+.subTitle {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: black;
+}
+.aboutTitle {
+  font-size: 50px;
+  font-weight: 500;
+}
+.aboutTitle span {
+  color: #ff014f;
+}
+.aboutTitleDesc {
+  font-size: 40px;
+}
+
+.ab1:hover {
+  z-index: 1;
+  transform: scale(1.1);
+}
+.ab2:hover {
+  z-index: 1;
+  transform: scale(1.1);
+}
+.ab3:hover {
+  transform: scale(1.1) translate(-50%, 0);
+  left: 50% !important;
+}

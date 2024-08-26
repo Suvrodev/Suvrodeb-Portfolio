@@ -61,3 +61,32 @@
     transform: translateY(100vh);
   }
 }
+
+/* Arrow Bounce start */
+.arrow {
+  width: 55px;
+  margin: 0 auto;
+  position: relative;
+  top: 120px;
+  cursor: pointer;
+}
+.arrowImage {
+  animation: arrowBounceImage 1s ease-out 0s infinite alternate both;
+}
+@keyframes arrowBounceImage {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

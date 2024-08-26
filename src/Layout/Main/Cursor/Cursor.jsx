@@ -180,10 +180,10 @@ const Cursor = ({
   };
 
   return (
-    <>
+    <div className="z-50">
       <div ref={cursorOuterRef} style={styles.cursorOuter} />
       <div ref={cursorInnerRef} style={styles.cursorInner} />
-    </>
+    </div>
   );
 };
 

@@ -14,9 +14,7 @@ const Main = () => {
         </div>
         <div className="w-full md:w-[80%] bg-[#333333] ">
           <div>
-            <div className="hidden md:block">
-              <Cursor />
-            </div>
+            <div className="hidden md:block z-50">{/* <Cursor /> */}</div>
             <div className="md:hidden">
               <MobileHeader />
             </div>
