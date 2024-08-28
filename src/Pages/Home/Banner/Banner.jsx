@@ -65,7 +65,7 @@ const Banner = () => {
               Specializing in custom web development. If you are a business
               seeking a web presence or are looking to hire, contact me
               <span>
-                <Link to="about">here.</Link>
+                <Link to="contact">here.</Link>
               </span>
             </span>
           </h1>
@@ -78,9 +78,9 @@ const Banner = () => {
 
           {/* <div className="relative"> */}
           <div className="arrow ">
-            <a href="https://sharmin-portfolio.netlify.app/#about">
+            <Link to="contact" smooth={true}>
               <img src={bounceImage} alt="" className="arrowImage" />
-            </a>
+            </Link>
           </div>
           {/* </div> */}
         </div>
