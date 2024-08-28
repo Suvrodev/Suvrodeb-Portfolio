@@ -7,7 +7,7 @@ const Pricing = () => {
     <div className="h-screen">
       <h1 className="text-2xl font-bold pText mb-10">Pricing</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-28">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-20 px-28">
         <div className="card">
           <div className="card-inner">
             <div className="card-front">

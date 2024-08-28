@@ -104,7 +104,7 @@ const Skill = () => {
     <div>
       <h1 className="text-2xl font-bold pText mb-10">Skill</h1>
 
-      <div className="w-full my-12">
+      <div className="w-full mt-12">
         <Marquee
           gradient={false}
           speed={80}
@@ -114,7 +114,7 @@ const Skill = () => {
           play={true}
           direction="left"
         >
-          <div className="flex gap-5">
+          <div className="flex gap-5 ml-5">
             {skillsArray.map((skill, idx) => (
               <SkillBox skill={skill} key={idx} />
             ))}
