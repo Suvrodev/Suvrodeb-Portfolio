@@ -7,24 +7,20 @@ import Footer from "../../Shared/Footer/Footer/Footer";
 
 const Main = () => {
   return (
-    <div className="cursoranim">
-      <div className="flex">
-        <div className="w-[20%] hidden md:block ">
-          <Header />
+    <div className="flex">
+      <div className="w-[20%] hidden md:block ">
+        <Header />
+      </div>
+      <div className="w-full  md:w-[80%] bg-[#333333] ">
+        <div className="md:hidden sticky top-0 z-50">
+          <MobileHeader />
         </div>
-        <div className="w-full md:w-[80%] bg-[#333333] ">
-          <div>
-            <div className="hidden md:block z-50">{/* <Cursor /> */}</div>
-            <div className="md:hidden">
-              <MobileHeader />
-            </div>
-          </div>
-          <div>
-            <Outlet />
-          </div>
-          <div>
-            <Footer />
-          </div>
+
+        <div>
+          <Outlet />
+        </div>
+        <div className="sticky top-0">
+          <Footer />
         </div>
       </div>
     </div>

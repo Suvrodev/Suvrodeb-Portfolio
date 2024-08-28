@@ -12,9 +12,30 @@ const Progressbar = ({ title, percentage }) => {
     }
   }, [percentage]);
 
+  /**
+   * For Responsive
+   */
+
+  const [containerWidth, setContainerWidth] = useState("500px");
+
+  useEffect(() => {
+    const updateWidth = () => {
+      if (window.innerWidth <= 576) {
+        setContainerWidth("1000px");
+      } else {
+        setContainerWidth("500px");
+      }
+    };
+
+    window.addEventListener("resize", updateWidth);
+    updateWidth(); // Set initial width
+
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
   const styles = {
     container: {
-      width: "500px",
+      width: containerWidth,
     },
     progressContainer: {
       width: "100%",

@@ -69,3 +69,13 @@
     background-position-y: 100%;
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .heading-primary-main {
+    font-size: 30px;
+  }
+
+  .animate-text {
+    font-size: 30px;
+  }
+}

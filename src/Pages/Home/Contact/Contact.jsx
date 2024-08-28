@@ -33,9 +33,9 @@ const Contact = () => {
   return (
     <div>
       <section className="mb-20">
-        <div className="flex bg-[#192655] p-10 rounded-lg">
-          <div className="w-1/2 relative">
-            <h1 className="text-white text-4xl font-bold absolute top-0 left-0">
+        <div className="flex flex-col md:flex-row bg-[#192655] p-4 md:p-10 rounded-lg">
+          <div className="w-full  md:w-1/2 relative">
+            <h1 className="text-white md:text-4xl font-bold md:absolute top-0 left-0">
               Contact with Me
             </h1>
             <div className="h-full w-full flex flex-col  items-center justify-center">
@@ -43,8 +43,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="w-1/2">
-            <div className="bg-[#333333] p-10 rounded-lg contactForm">
+          <div className="w-full md:w-1/2">
+            <div className="bg-[#333333] p-4 md:p-10 rounded-lg contactForm">
               <form ref={form} onSubmit={sendEmail}>
                 <input
                   type="text"

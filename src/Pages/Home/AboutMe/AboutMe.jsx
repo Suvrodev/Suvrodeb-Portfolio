@@ -13,37 +13,43 @@ const image3 =
 const AboutMe = () => {
   const images = [image1, image2, image3];
   return (
-    <div>
+    <div className="h-[800px] md:h-auto">
       <p> NICE TO MEET YOU!</p>
-      <h1 className="text-2xl font-bold pText uppercase my-4">
+      <h1 className="text-2xl font-bold pText uppercase my-10 md:my-4">
         everything about me!
       </h1>
 
-      <div className="flex gap-24  h-[450px]">
-        <div className="w-1/2 p-20 ">
+      <div className="flex flex-col md:flex-row gap-36 md:gap-24  h-[450px]">
+        <div className="w-full md:w-1/2 p-0 md:p-20 ">
           <div className="relative h-full">
             <img
               src={image1}
               alt=""
-              className={`w-[250px] h-[200px] absolute left-0 top-0 ab1 transition-all duration-700`}
+              className={`w-[150px] md:w-[250px] h-[100px] md:h-[200px] absolute left-0 top-0 ab1 transition-all duration-700`}
             />
             <img
               src={image2}
               alt=""
-              className={`w-[250px] h-[200px] absolute top-14 right-0 ab2 transition-all duration-700`}
+              className={`w-[150px] md:w-[250px] h-[100px] md:h-[200px] absolute top-0 md:top-14 right-0 ab2 transition-all duration-700`}
             />
             <img
               src={image3}
               alt=""
-              className={`w-[250px] h-[200px] absolute -bottom-10 left-1/2 transform -translate-x-1/2 ab3 transition-all duration-700`}
+              className={`hidden md:block w-[150px] md:w-[250px] h-[100px] md:h-[200px] absolute -bottom-10 left-1/2 transform -translate-x-1/2 ab3 transition-all duration-700`}
             />
-            <p className="absolute ">Check</p>
+
+            <img
+              src={image3}
+              alt=""
+              className={` md:hidden w-[150px] md:w-[250px] h-[100px] md:h-[200px] absolute  -top-4 left-1/2 transform -translate-x-1/2 ab3 transition-all duration-700`}
+            />
+
             {/* {images.map((image, idx) => (
               <AboutImage key={idx} image={image} number={idx} />
             ))} */}
           </div>
         </div>
-        <div className="w-1/2 ">
+        <div className="w-full md:w-1/2 ">
           <div>
             <span className="subTitle">Welcome to my world</span>
             <h1 className="aboutTitle">

@@ -25,7 +25,7 @@ import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer-section font-bold">
+      <div className="footer-section font-bold">
         <div className="py-20 px-10 grid grid-cols-1 md:grid-cols-4  ">
           <div className="">
             <h1 className="text-[24px]  footerTitle">Suvrodeb Howlader</h1>
@@ -120,7 +120,7 @@ const Footer = () => {
             <div className="wave waveFour"></div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 };

@@ -1,125 +1,52 @@
 import React, { useState } from "react";
+import "./MobileHeader.css";
 import logoImage from "../../../../assets/HeaderImage/Logo.png";
 import { Link, NavLink } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+// import logoImage from "../assets/HeaderImage/myLogo.png";
+import me from "../../../../assets/HeaderImage/myLogo.png";
+import MobileHeaderOption from "./MobileHeaderOption/MobileHeaderOption";
+
+import HomeIcon from "@mui/icons-material/Home";
+import InfoIcon from "@mui/icons-material/Info";
+import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
+import Diversity3Icon from "@mui/icons-material/Diversity3";
+import VpnKeyOffIcon from "@mui/icons-material/VpnKeyOff";
+import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
+import EventNoteIcon from "@mui/icons-material/EventNote";
+import ImageIcon from "@mui/icons-material/Image";
+import RssFeedIcon from "@mui/icons-material/RssFeed";
+import EmailIcon from "@mui/icons-material/Email";
+import TungstenIcon from "@mui/icons-material/Tungsten";
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 
 const MobileHeader = () => {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handlePressMenu = () => {
-    setOpen(!open);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <div className="">
-      <div className="px-5 py-5 flex items-center justify-between bg-black opacity-80">
-        <div>
-          <Link to={"/"}>
-            <LazyLoadImage
-              src={logoImage}
-              // onClick={handlePressMenu}
-              className="w-[120px]"
-            />
-          </Link>
-        </div>
-        <div onClick={handlePressMenu}>
-          <div className={` ${open ? "hidden" : "block"}`}>
-            <MenuIcon />
-          </div>
-          <div className={` ${open ? "" : "hidden"}`}>
-            <CloseIcon />
-          </div>
+    <div className=" w-full flex justify-between items-center py-2 px-5 bg-[#0F172A] ">
+      <img src={me} alt="Profile" className="w-[50px] h-[50px] rounded-full" />
+      <div>
+        <div
+          className={`menu-icon ${isOpen ? "open" : ""}`}
+          onClick={handleClick}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-      <div
-        className={`bg-black p-2 h-auto transition-all duration-700 ease-in-out ${
-          open ? "opacity-100 max-h-screen" : "opacity-0 max-h-0 hidden"
-        }`}
-      >
-        <div className="flex flex-col gap-4 font-bold ">
-          <NavLink
-            onClick={handlePressMenu}
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-extrabold" : ""
-            }
-            to="/home"
-          >
-            Home
-          </NavLink>
 
-          <NavLink
-            onClick={handlePressMenu}
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-extrabold" : ""
-            }
-            to="/service"
-          >
-            Service
-          </NavLink>
-
-          <NavLink
-            onClick={handlePressMenu}
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-extrabold" : ""
-            }
-            to="/portfolio"
-          >
-            Portfolio
-          </NavLink>
-
-          <NavLink
-            onClick={handlePressMenu}
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-extrabold" : ""
-            }
-            to="/about"
-          >
-            About
-          </NavLink>
-
-          <NavLink
-            onClick={handlePressMenu}
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-extrabold" : ""
-            }
-            to="/gigs"
-          >
-            Gigs
-          </NavLink>
-
-          <NavLink
-            onClick={handlePressMenu}
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-extrabold" : ""
-            }
-            to="/project"
-          >
-            Project
-          </NavLink>
-
-          <NavLink
-            onClick={handlePressMenu}
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-extrabold" : ""
-            }
-            to="/blogs"
-          >
-            Blog
-          </NavLink>
-
-          <NavLink
-            onClick={handlePressMenu}
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-extrabold" : ""
-            }
-            to="/contact"
-          >
-            Contact
-          </NavLink>
+      {isOpen && (
+        <div className="fixed z-20 bottom-0 left-0 w-full transition-all duration-700">
+          <MobileHeaderOption handleClick={handleClick} />
         </div>
-      </div>
+      )}
     </div>
   );
 };

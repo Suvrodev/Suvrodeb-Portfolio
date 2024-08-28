@@ -55,11 +55,14 @@ const Banner = () => {
         </div>
 
         {/* Text start */}
-        <div className="absolute">
+        <div className="absolute top-20 md:top-auto">
           <h1 className="heading-primary">
             <span className="heading-primary-main">
               Frontend
-              <span className="animate-text">javascript react </span>Development
+              <span className="animate-text">
+                <br className="block md:hidden " /> javascript react{" "}
+              </span>
+              Development
             </span>
             <span className="heading-primary-sub">
               Specializing in custom web development. If you are a business

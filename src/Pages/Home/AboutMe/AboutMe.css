@@ -26,3 +26,12 @@
   transform: scale(1.1) translate(-50%, 0);
   left: 50% !important;
 }
+
+@media only screen and (max-width: 576px) {
+  .aboutTitle {
+    font-size: 26px;
+  }
+  .aboutTitleDesc {
+    font-size: 24px;
+  }
+}
