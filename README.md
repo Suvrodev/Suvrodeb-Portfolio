@@ -2,7 +2,8 @@
 
 - [Suvrodeb Portfolio](https://remarkable-rabanadas-e09ded.netlify.app/)
 
-<h6>For Scroll </h6>
-```
+### For scroll based on id
+
+```bash
 npm i react-scroll
 ```
