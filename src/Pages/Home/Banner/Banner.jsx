@@ -3,6 +3,7 @@ import "./Banner.css";
 import "./BannerText.css";
 import bgImage from "../../../assets/bgImage/Bg-4.jpg";
 import bounceImage from "../../../assets/Banner/down-chevron.svg";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   const droplets = 70;
@@ -64,9 +65,7 @@ const Banner = () => {
               Specializing in custom web development. If you are a business
               seeking a web presence or are looking to hire, contact me
               <span>
-                <a href="https://sharmin-portfolio.netlify.app/#contact">
-                  here.
-                </a>
+                <Link to="about">here.</Link>
               </span>
             </span>
           </h1>
