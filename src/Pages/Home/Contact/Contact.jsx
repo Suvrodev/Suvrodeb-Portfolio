@@ -32,7 +32,7 @@ const Contact = () => {
 
   return (
     <div>
-      <section className="contact-section" id="contact">
+      <section className="mb-20">
         <div className="flex bg-[#192655] p-10 rounded-lg">
           <div className="w-1/2 relative">
             <h1 className="text-white text-4xl font-bold absolute top-0 left-0">

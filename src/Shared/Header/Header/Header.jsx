@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logoImage from "../../../assets/HeaderImage/myLogo.png";
 import {
   FaFacebookF,
@@ -21,13 +21,14 @@ import { FaDribbble, FaBehance } from "react-icons/fa";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import goLink from "../../../JS-File/goLink";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
     <div className="sticky top-0">
       <div className="bg-[#F3F9FF] h-[100vh] w-full flex flex-col items-center text-black  overflow-hidden relative  ">
         <div className="my-10 ">
-          <Link to={"/"}>
+          <Link to={"banner"} smooth={true} className="cursor-pointer">
             <div className="">
               <img
                 src={logoImage}
@@ -42,73 +43,37 @@ const Header = () => {
         </div>
 
         <div className="flex flex-col gap-1 pText font-semibold">
-          <NavLink
-            className={({ isActive }) => (isActive ? "acLk" : "acLk ")}
-            to="/home"
-          >
+          <Link to="banner" smooth={true} className="cursor-pointer">
             Home
-          </NavLink>
+          </Link>
 
-          <NavLink
-            className={({ isActive }) => (isActive ? "acLk " : "lk ")}
-            to="/service"
-          >
+          <Link to="about" smooth={true} className="cursor-pointer">
+            About me
+          </Link>
+
+          <Link to="service" smooth={true} className="cursor-pointer">
             Service
-          </NavLink>
+          </Link>
 
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "acLk font-extrabold" : "lk"
-            }
-            to="/portfolio"
-          >
-            Portfolio
-          </NavLink>
+          <Link to="skill" smooth={true} className="cursor-pointer">
+            Skill
+          </Link>
 
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "acLk font-extrabold" : "lk"
-            }
-            to="/about"
-          >
-            About
-          </NavLink>
+          <Link to="testimonial" smooth={true} className="cursor-pointer">
+            Testimonial
+          </Link>
 
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "acLk font-extrabold" : "lk"
-            }
-            to="/gigs"
-          >
-            Gigs
-          </NavLink>
+          <Link to="price" smooth={true} className="cursor-pointer">
+            Price
+          </Link>
 
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "acLk font-extrabold" : "lk"
-            }
-            to="/project"
-          >
-            Project
-          </NavLink>
-
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "acLk font-extrabold" : "lk"
-            }
-            to="/blogs"
-          >
+          <Link to="blog" smooth={true} className="cursor-pointer">
             Blog
-          </NavLink>
+          </Link>
 
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "acLk font-extrabold" : "lk"
-            }
-            to="/contact"
-          >
+          <Link to="contact" smooth={true} className="cursor-pointer">
             Contact
-          </NavLink>
+          </Link>
         </div>
 
         {/* Icon Start */}

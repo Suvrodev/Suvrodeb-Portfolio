@@ -1,3 +1,10 @@
+.footerTitle {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Edu VIC WA NT Beginner", "sans-serif" !important;
+}
+
 .footer-section {
   position: relative;
   background-image: linear-gradient(to top, #4f4a45, #192655 100%);
