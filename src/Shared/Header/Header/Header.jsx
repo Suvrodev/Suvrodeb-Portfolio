@@ -36,12 +36,14 @@ import EmailIcon from "@mui/icons-material/Email";
 import TungstenIcon from "@mui/icons-material/Tungsten";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import sendEmail from "../../../JS-File/sendEmail";
+import goCall from "../../../JS-File/goCall";
 
 const Header = () => {
   return (
     <div className="sticky top-0">
       <div className="bg-[#F3F9FF] h-[100vh] w-full flex flex-col items-center text-black  overflow-hidden relative  ">
-        <div className="my-10 ">
+        <div className="mt-10 mb-8 ">
           <Link to={"banner"} smooth={true} className="cursor-pointer">
             <div>
               <img
@@ -51,7 +53,7 @@ const Header = () => {
               />
             </div>
           </Link>
-          <h1 className="text-center mt-5 font-bold text-[24px] animate-text resizeForHeader">
+          <h1 className="text-center mt-2 font-bold text-[24px] animate-text resizeForHeader">
             Suvrodeb
           </h1>
         </div>
@@ -182,53 +184,27 @@ const Header = () => {
         {/* Icon end */}
 
         <div className="">
-          <div className="pt-10 text-black text-[15px]">
+          <div className="pt-2 text-black text-[15px]">
             <p>
               <span className="font-bold">Email: </span>{" "}
-              <span> suvrodeb.cse@gmail.com</span>
+              <span onClick={() => sendEmail()}> suvrodeb.cse@gmail.com</span>
             </p>
             <p>
               <span className="font-bold">Phone: </span>{" "}
-              <span> +88 01951912997</span>
+              <span onClick={() => goCall()}> +88 01951912997</span>
             </p>
           </div>
-
-          {/* <div className="mt-[20px] text-black text-[15px]">
-          <p>
-            Copyright ©2024 <strong>Suvrodeb</strong> <br /> All Rights
-            Reserved.
-          </p>
-        </div> */}
         </div>
 
-        {/* Wave Animation */}
-        <div className="footer-section font-bold">
-          <div className="py-20 px-10 grid grid-cols-1 md:grid-cols-4  ">
-            <div>
-              <h1 className="text-[24px] text-white font-bold mb-8">
-                Our Services
-              </h1>
-              <h1>Responsive Web Design</h1>
-              <h1>Mern Stack Development</h1>
-              <h1>MongoDB Service</h1>
-              <h1>My Sql Service</h1>
-            </div>
+        <div class="oceanHeader">
+          <div>
+            <h1 className="z-20 px-5 bottom-1 absolute text-white text-center">
+              Copyright © 2024 Suvrodeb All rights reserved.
+            </h1>
           </div>
-
-          <div className="footer__waveWrapper bottom-wave waveAnimation">
-            <div className="waveInner bgOne">
-              <div className="wave waveOne"></div>
-            </div>
-            <div className="waveInner bgTwo">
-              <div className="wave waveTwo"></div>
-            </div>
-            <div className="waveInner bgThree">
-              <div className="wave waveThree"></div>
-            </div>
-            <div className="waveInner bgFour">
-              <div className="wave waveFour"></div>
-            </div>
-          </div>
+          <div class="waveHeader"></div>
+          <div class="waveHeader"></div>
+          {/* <div class="waveHeader"></div> */}
         </div>
       </div>
     </div>

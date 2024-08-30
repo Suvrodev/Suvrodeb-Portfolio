@@ -22,11 +22,13 @@ import goLink from "../../../JS-File/goLink";
 import PhoneForwardedIcon from "@mui/icons-material/PhoneForwarded";
 import EmailIcon from "@mui/icons-material/Email";
 import { Link } from "react-scroll";
+import goCall from "../../../JS-File/goCall";
+import sendEmail from "../../../JS-File/sendEmail";
 const Footer = () => {
   return (
     <div>
       <div className="footer-section font-bold">
-        <div className="py-20 px-10 grid grid-cols-1 md:grid-cols-4  ">
+        <div className="py-20 px-10 grid grid-cols-1 md:grid-cols-4 gap-4 ">
           <div className="">
             <h1 className="text-[24px]  footerTitle">Suvrodeb Howlader</h1>
             <div className="flex gap-4 items-center mt-8 text-white">
@@ -76,10 +78,12 @@ const Footer = () => {
               Contact Detail
             </h1>
             <div>
-              <PhoneForwardedIcon /> <span>+880 1951912997</span>
+              <PhoneForwardedIcon />{" "}
+              <span onClick={() => goCall()}>+880 1951912997</span>
             </div>
             <div className="mt-4">
-              <EmailIcon /> <span>suvrodeb.cse@gmail.com</span>
+              <EmailIcon />{" "}
+              <span onClick={() => sendEmail()}>suvrodeb.cse@gmail.com</span>
             </div>
           </div>
 
