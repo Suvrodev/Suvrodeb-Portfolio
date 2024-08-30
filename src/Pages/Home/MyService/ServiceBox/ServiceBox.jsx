@@ -1,9 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./ServiceBox.css";
 
 const ServiceBox = ({ service }) => {
-  //   console.log(service);
+  // console.log(service);
   const { id, title, desc, image } = service;
+
+  const modalRef = useRef(null);
+
+  const showModal = () => {
+    if (modalRef.current) {
+      modalRef.current.showModal();
+    }
+  };
+
   let identifier = id;
 
   /**
@@ -87,6 +96,24 @@ const ServiceBox = ({ service }) => {
     // </div>
 
     <div>
+      {/* Modal start */}
+      <dialog id="my_modal_3" ref={modalRef} className="modal w-full ">
+        <div className="modal-box p-0 w-full  bg-[#5921B5]">
+          <form method="dialog">
+            <button className="btn btn-circle btn-ghost bg-[#764EC3] hover:bg-[#764EC3]  absolute right-2 top-2  text-white z-20">
+              ✕
+            </button>
+          </form>
+          <div className="p-2 w-full">
+            <img src={image} alt="" className="w-[450px] mx-auto rounded-md`" />
+            <div className="p-12 text-center">
+              <p>{desc}</p>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      {/* Modal end */}
       <div className={`glow-container-${identifier} glow-container`}>
         <article
           className={`glow-card glow-card-${identifier} h-fit cursor-pointer  border-[#2a2e5a] transition-all duration-300 relative bg-transparent text-gray-200 rounded-xl hover:border-transparent w-full`}
@@ -98,7 +125,10 @@ const ServiceBox = ({ service }) => {
               <h1 className="text-xl text-black font-bold">{title}</h1>
               <p className="pText">{desc}</p>
             </div>
-            <button className="btn btn-primary text-white absolute bottom-10 ">
+            <button
+              className="btn btn-primary text-white absolute bottom-10 "
+              onClick={showModal}
+            >
               Read More
             </button>
           </div>

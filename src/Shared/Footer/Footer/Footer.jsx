@@ -75,11 +75,11 @@ const Footer = () => {
             <h1 className="text-[24px] text-white font-bold mb-8">
               Contact Detail
             </h1>
-            <div className="flex flex-col gap-2">
-              <Link to="service">About me</Link>
-              <Link to="service">Service</Link>
-              <Link to="service">Skill</Link>
-              <Link to="service">Price</Link>
+            <div>
+              <PhoneForwardedIcon /> <span>+880 1951912997</span>
+            </div>
+            <div className="mt-4">
+              <EmailIcon /> <span>suvrodeb.cse@gmail.com</span>
             </div>
           </div>
 
@@ -87,11 +87,11 @@ const Footer = () => {
             <h1 className="text-[24px] text-white font-bold mb-8">
               Quick Links
             </h1>
-            <div>
-              <PhoneForwardedIcon /> <span>+880 1951912997</span>
-            </div>
-            <div className="mt-4">
-              <EmailIcon /> <span>suvrodeb.cse@gmail.com</span>
+            <div className="flex flex-col gap-2">
+              <Link to="about">About me</Link>
+              <Link to="service">Service</Link>
+              <Link to="skill">Skill</Link>
+              <Link to="price">Price</Link>
             </div>
           </div>
 

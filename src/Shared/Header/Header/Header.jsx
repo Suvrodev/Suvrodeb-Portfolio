@@ -35,6 +35,7 @@ import RssFeedIcon from "@mui/icons-material/RssFeed";
 import EmailIcon from "@mui/icons-material/Email";
 import TungstenIcon from "@mui/icons-material/Tungsten";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 
 const Header = () => {
   return (
@@ -114,7 +115,7 @@ const Header = () => {
           </div>
 
           <div className="flex gap-2 items-center">
-            <CurrencyRupeeIcon className="opacity-50" />
+            <AttachMoneyIcon className=" opacity-50" />
             <Link
               to="price"
               smooth={true}
