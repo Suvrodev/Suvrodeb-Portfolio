@@ -4,7 +4,7 @@
 }
 
 .u-line-effect {
-  display: inline-block;
+  display: block;
   position: relative;
 }
 .u-line-effect:before {

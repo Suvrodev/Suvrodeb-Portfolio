@@ -8,6 +8,11 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
+import HomeIcon from "@mui/icons-material/Home";
+import InfoIcon from "@mui/icons-material/Info";
+import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
+import TungstenIcon from "@mui/icons-material/Tungsten";
+
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -77,13 +82,17 @@ const Footer = () => {
             <h1 className="text-[24px] text-white font-bold mb-8">
               Contact Detail
             </h1>
-            <div>
-              <PhoneForwardedIcon />{" "}
-              <span onClick={() => goCall()}>+880 1951912997</span>
+            <div className="flex items-center">
+              <div className="u-line-effect">
+                <PhoneForwardedIcon />{" "}
+                <span onClick={() => goCall()}>+880 1951912997</span>
+              </div>
             </div>
-            <div className="mt-4">
-              <EmailIcon />{" "}
-              <span onClick={() => sendEmail()}>suvrodeb.cse@gmail.com</span>
+            <div className="mt-4 flex items-center">
+              <div className="u-line-effect">
+                <EmailIcon />{" "}
+                <span onClick={() => sendEmail()}>suvrodeb.cse@gmail.com</span>
+              </div>
             </div>
           </div>
 
@@ -92,18 +101,51 @@ const Footer = () => {
               Quick Links
             </h1>
             <div className="flex flex-col gap-2">
-              <Link to="about" smooth={true}>
-                About me
-              </Link>
-              <Link to="service" smooth={true}>
-                Service
-              </Link>
-              <Link to="skill" smooth={true}>
-                Skill
-              </Link>
-              <Link to="price" smooth={true}>
-                Price
-              </Link>
+              {/* <div className="flex gap-2 items-center">
+                <HomeIcon className="opacity-50" />
+
+                <Link
+                  to="banner"
+                  smooth={true}
+                  className="cursor-pointer u-line-effect"
+                >
+                  Home
+                </Link>
+              </div> */}
+
+              <div className="flex gap-2 items-center">
+                <InfoIcon className="opacity-50" />
+                <Link
+                  to="about"
+                  smooth={true}
+                  className="cursor-pointer u-line-effect"
+                >
+                  About me
+                </Link>
+              </div>
+
+              <div className="flex gap-2 items-center">
+                <ManageAccountsIcon className="opacity-50" />
+
+                <Link
+                  to="service"
+                  smooth={true}
+                  className="cursor-pointer u-line-effect"
+                >
+                  Service
+                </Link>
+              </div>
+
+              <div className="flex gap-2 items-center">
+                <TungstenIcon className="opacity-50 rotate-180" />
+                <Link
+                  to="skill"
+                  smooth={true}
+                  className="cursor-pointer u-line-effect"
+                >
+                  Skill
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -111,10 +153,21 @@ const Footer = () => {
             <h1 className="text-[24px] text-white font-bold mb-8">
               Our Services
             </h1>
-            <h1>Responsive Web Design</h1>
-            <h1>Mern Stack Development</h1>
-            <h1>MongoDB Service</h1>
-            <h1>My Sql Service</h1>
+            <div className="flex flex-col gap-2  justify-center">
+              <div className="flex items-center">
+                <span className="u-line-effect">Responsive Web Design</span>
+              </div>
+              <div className="flex items-center">
+                <span className="u-line-effect">Mern Stack Development</span>
+              </div>
+              <div className="flex items-center">
+                <span className="u-line-effect">MongoDB Service</span>
+              </div>
+
+              <div>
+                <span className="u-line-effect">My Sql Service</span>
+              </div>
+            </div>
           </div>
         </div>
 

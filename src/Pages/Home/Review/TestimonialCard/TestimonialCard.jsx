@@ -17,8 +17,8 @@ const TestimonialCard = ({ testimonial }) => {
           <img src={image} alt="" className="w-[150px] h-[150px] z-10 " />
         </div>
         <div className="h-full relative hidden md:flex items-center ">
-          <div className="absolute w-[25px] h-[2px] bg-white top-[50%] right-0"></div>
-          <div className="w-[1px] h-[150px] bg-white"></div>
+          <div className="absolute w-[25px] h-[2px] pColor top-[50%] right-0"></div>
+          <div className="w-[1px] h-[150px] pColor"></div>
         </div>
       </div>
 

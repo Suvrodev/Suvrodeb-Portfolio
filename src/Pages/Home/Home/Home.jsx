@@ -16,36 +16,33 @@ const Home = () => {
   return (
     <div className="w-full" id="banner">
       <Banner />
-      <div className="p-2 md:p-10 aboutmeBgColor" id="about">
-        {/* <AboutMe /> */}
+
+      <div className=" px-5 md:px-36 py-10 aboutmeBgColor" id="about">
         <AboutMe2 />
       </div>
-      <div className="p-2 md:p-10 aboutmeBgColor">
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor">
         <Experience />
       </div>
-      <div className="p-2 md:p-10 aboutmeBgColor" id="service">
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="service">
         <MyService />
       </div>
-      <div className="p-2 md:p-10 aboutmeBgColor" id="skill">
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="skill">
         <Skill />
       </div>
       <div className="p-2 md:p-10 aboutmeBgColor flex justify-start md:justify-center ">
         <SkillLoading />
       </div>
 
-      <div className="p-2 md:p-10 aboutmeBgColor" id="testimonial">
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="testimonial">
         <Review />
       </div>
 
-      <div className="p-2 md:p-10 aboutmeBgColor" id="price">
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="price">
         <NewPricing />
       </div>
-      <div className="p-2 md:p-10 aboutmeBgColor" id="contact">
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="contact">
         <Contact />
       </div>
-      {/* <div className="p-10 aboutmeBgColor">
-        <Pricing />
-      </div> */}
     </div>
   );
 };

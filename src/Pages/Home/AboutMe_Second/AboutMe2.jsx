@@ -12,7 +12,7 @@ import tailwindImage from "../../../assets/AboutMe/tailwind.png";
 import typescriptImage from "../../../assets/AboutMe/ts.png";
 const AboutMe2 = () => {
   return (
-    <div className="h-[1100px] md:h-auto">
+    <div className="h-[1100px] w-full md:h-auto">
       <p> NICE TO MEET YOU!</p>
       <h1 className="text-2xl font-bold pText uppercase my-10 md:my-4">
         everything about me!

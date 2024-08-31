@@ -9,7 +9,7 @@
   transition: background 0.3s;
 }
 
-.cvBtn::after,
+.cv২:after,
 .cvBtn::before {
   opacity: 0;
   visibility: hidden;
