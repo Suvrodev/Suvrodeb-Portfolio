@@ -10,13 +10,15 @@ import Review from "../Review/Review";
 import SkillLoading from "../Skill/SkillLoading/SkillLoading";
 import Contact from "../Contact/Contact";
 import NewPricing from "../NewPricing/NewPricing";
+import AboutMe2 from "../AboutMe_Second/AboutMe2";
 
 const Home = () => {
   return (
     <div className="w-full" id="banner">
       <Banner />
       <div className="p-2 md:p-10 aboutmeBgColor" id="about">
-        <AboutMe />
+        {/* <AboutMe /> */}
+        <AboutMe2 />
       </div>
       <div className="p-2 md:p-10 aboutmeBgColor">
         <Experience />

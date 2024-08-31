@@ -1,0 +1,21 @@
+.abtAnim {
+  animation: updown 7s ease-in-out 2s infinite forwards;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translatey(10px);
+  }
+  50% {
+    transform: translatey(0px);
+  }
+  75% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

@@ -8,18 +8,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import me from "../../../../assets/HeaderImage/myLogo.png";
 import MobileHeaderOption from "./MobileHeaderOption/MobileHeaderOption";
 
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
-import Diversity3Icon from "@mui/icons-material/Diversity3";
-import VpnKeyOffIcon from "@mui/icons-material/VpnKeyOff";
-import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
-import EventNoteIcon from "@mui/icons-material/EventNote";
-import ImageIcon from "@mui/icons-material/Image";
-import RssFeedIcon from "@mui/icons-material/RssFeed";
-import EmailIcon from "@mui/icons-material/Email";
-import TungstenIcon from "@mui/icons-material/Tungsten";
-import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 
 const MobileHeader = () => {
   const [isOpen, setIsOpen] = useState(false);

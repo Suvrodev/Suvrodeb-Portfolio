@@ -22,92 +22,94 @@ const MobileHeaderOption = ({ handleClick }) => {
   return (
     <div className=" bg-[#130f49] text-white py-5">
       <div className="flex gap-2 justify-around  ">
-        <div className="flex flex-col  justify-center items-center  ">
-          <HomeIcon className="mhI" />
-
+        <div className="flex flex-col  justify-center items-center ">
           <Link
             to="banner"
             smooth={true}
             className="cursor-pointer u-line-effect "
           >
-            <p className="text-[10px]"> Home</p>
+            <div className="flex flex-col  justify-center items-center  ">
+              <HomeIcon className="mhI" />
+              <p className="text-[10px]"> Home</p>
+            </div>
           </Link>
         </div>
 
-        <div className="flex flex-col  justify-center items-center  ">
-          <InfoIcon className=" mhI" />
+        <div className="flex flex-col  justify-center items-center ">
           <Link
             to="about"
             smooth={true}
             className="cursor-pointer u-line-effect text-[10px]"
           >
-            <p className="text-[10px]"> About me</p>
+            <div className="flex flex-col  justify-center items-center  ">
+              <InfoIcon className=" mhI" />
+              <p className="text-[10px]"> About me</p>
+            </div>
           </Link>
         </div>
+
         <div className="flex flex-col  justify-center items-center  ">
-          <ManageAccountsIcon className=" mhI" />
           <Link
             to="service"
             smooth={true}
             className="cursor-pointer u-line-effect text-[10px]"
           >
-            <p className="text-[10px]"> Service</p>
+            <div className="flex flex-col  justify-center items-center  ">
+              <ManageAccountsIcon className=" mhI" />
+              <p className="text-[10px]"> Service</p>
+            </div>
           </Link>
         </div>
 
         <div className="flex flex-col  justify-center items-center  ">
-          <TungstenIcon className=" rotate-180 mhI" />
           <Link
             to="skill"
             smooth={true}
-            className="cursor-pointer u-line-effect text-[10px]"
+            className="cursor-pointer u-line-effect text-[10px] "
           >
-            <p className="text-[10px]"> Skill</p>
+            <div className="flex flex-col  justify-center items-center ">
+              <TungstenIcon className=" rotate-180 mhI" />
+              <p className="text-[10px]"> Skill</p>
+            </div>
           </Link>
         </div>
 
         <div className="flex flex-col  justify-center items-center  ">
-          <EventNoteIcon className=" mhI" />
           <Link
             to="testimonial"
             smooth={true}
             className="cursor-pointer u-line-effect text-[10px]"
           >
-            <p className="text-[10px]"> Testimonial</p>
+            <div className="flex flex-col  justify-center items-center">
+              <EventNoteIcon className=" mhI" />
+              <p className="text-[10px]"> Testimonial</p>
+            </div>
           </Link>
         </div>
 
-        {/* <div className="flex flex-col  justify-center items-center  ">
-          <AttachMoneyIcon className=" mhI" />
-          <Link
-            to="price"
-            smooth={true}
-            className="cursor-pointer u-line-effect  text-[10px]"
-          >
-            <p className="text-[10px]"> Price</p>
-          </Link>
-        </div> */}
-
         <div className="flex flex-col  justify-center items-center  ">
-          <RssFeedIcon className="mhI" />
-
           <Link
             to="blog"
             smooth={true}
             className="cursor-pointer  u-line-effect text-[10px]"
           >
-            <p className="text-[10px]"> Blog</p>
+            <div className="flex flex-col  justify-center items-center">
+              <RssFeedIcon className="mhI" />
+              <p className="text-[10px]"> Blog</p>
+            </div>
           </Link>
         </div>
 
         <div className="flex flex-col  justify-center items-center  ">
-          <EmailIcon className="mhI" />
           <Link
             to="contact"
             smooth={true}
-            className="cursor-pointer  u-line-effect text-[10px]"
+            className="cursor-pointer  u-line-effect text-[10px] "
           >
-            <p className="text-[10px]"> Contact</p>
+            <div className="flex flex-col  justify-center items-center ">
+              <EmailIcon className="mhI" />
+              <p className="text-[10px]"> Contact</p>
+            </div>
           </Link>
         </div>
       </div>

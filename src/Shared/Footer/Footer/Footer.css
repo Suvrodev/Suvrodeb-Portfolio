@@ -436,3 +436,7 @@
     background-position: 12% 100%;
   }
 }
+
+.footerCursor div {
+  cursor: pointer;
+}

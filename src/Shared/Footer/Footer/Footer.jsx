@@ -27,7 +27,7 @@ import sendEmail from "../../../JS-File/sendEmail";
 const Footer = () => {
   return (
     <div>
-      <div className="footer-section font-bold">
+      <div className="footerCursor footer-section font-bold">
         <div className="py-20 px-10 grid grid-cols-1 md:grid-cols-4 gap-4 ">
           <div className="">
             <h1 className="text-[24px]  footerTitle">Suvrodeb Howlader</h1>
@@ -92,10 +92,18 @@ const Footer = () => {
               Quick Links
             </h1>
             <div className="flex flex-col gap-2">
-              <Link to="about">About me</Link>
-              <Link to="service">Service</Link>
-              <Link to="skill">Skill</Link>
-              <Link to="price">Price</Link>
+              <Link to="about" smooth={true}>
+                About me
+              </Link>
+              <Link to="service" smooth={true}>
+                Service
+              </Link>
+              <Link to="skill" smooth={true}>
+                Skill
+              </Link>
+              <Link to="price" smooth={true}>
+                Price
+              </Link>
             </div>
           </div>
 
