@@ -13,6 +13,7 @@
   perspective: 150rem;
   position: relative;
   height: 48rem;
+  /* background-color: #7480ff; */
 }
 
 .card.card-two {
@@ -123,6 +124,7 @@
   padding: 0.7rem;
   display: flex;
   justify-content: center;
+  /* background-color: #7480ff; */
 }
 
 .card__details ul {

@@ -11,6 +11,7 @@ import SkillLoading from "../Skill/SkillLoading/SkillLoading";
 import Contact from "../Contact/Contact";
 import NewPricing from "../NewPricing/NewPricing";
 import AboutMe2 from "../AboutMe_Second/AboutMe2";
+import LeftSocialIcon from "../UtilitiesPages/LeftSocialIcon/LeftSocialIcon";
 
 const Home = () => {
   return (

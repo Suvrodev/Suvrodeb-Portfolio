@@ -164,7 +164,7 @@ const Footer = () => {
                 <span className="u-line-effect">MongoDB Service</span>
               </div>
 
-              <div>
+              <div className="flex items-center">
                 <span className="u-line-effect">My Sql Service</span>
               </div>
             </div>

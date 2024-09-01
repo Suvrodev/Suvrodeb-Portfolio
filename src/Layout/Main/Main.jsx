@@ -4,6 +4,8 @@ import Header from "../../Shared/Header/Header/Header";
 import Cursor from "./Cursor/Cursor";
 import MobileHeader from "../../Shared/Header/Header/MobileHeader/MobileHeader";
 import Footer from "../../Shared/Footer/Footer/Footer";
+import LeftSocialIcon from "../../Pages/Home/UtilitiesPages/LeftSocialIcon/LeftSocialIcon";
+import GoToTop from "../../Pages/Home/UtilitiesPages/GoToTop/GoToTop";
 
 const Main = () => {
   return (
@@ -19,9 +21,15 @@ const Main = () => {
         <div>
           <Outlet />
         </div>
+
         <div className="sticky top-0">
           <Footer />
         </div>
+      </div>
+
+      <div>
+        <LeftSocialIcon />
+        <GoToTop />
       </div>
     </div>
   );

@@ -53,10 +53,7 @@ const NewPricing = () => {
                 <p className="card__price-only">Only</p>
                 <p className="card__price-value">$99</p>
               </div>
-              <a
-                href="https://sharmin-portfolio.netlify.app/#contact"
-                className="btn btn-white"
-              >
+              <a href="" className="btn btn-white">
                 Contact me!
               </a>
             </div>
@@ -71,7 +68,7 @@ const NewPricing = () => {
                 Package
               </span>
             </h4>
-            <div className="card__details">
+            <div className="">
               <ul>
                 <li>
                   <CloseIcon className="font-bold  text-[#40DECF] text-2xl" />
@@ -148,10 +145,7 @@ const NewPricing = () => {
                 <p className="card__price-only">Only</p>
                 <p className="card__price-value">$299</p>
               </div>
-              <a
-                href="https://sharmin-portfolio.netlify.app/#contact"
-                className="btn btn-white"
-              >
+              <a href="" className="btn btn-white">
                 Contact me!
               </a>
             </div>
