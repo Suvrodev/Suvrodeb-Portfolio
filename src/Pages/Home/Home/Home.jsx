@@ -12,6 +12,8 @@ import Contact from "../Contact/Contact";
 import NewPricing from "../NewPricing/NewPricing";
 import AboutMe2 from "../AboutMe_Second/AboutMe2";
 import LeftSocialIcon from "../UtilitiesPages/LeftSocialIcon/LeftSocialIcon";
+import Project from "../Project/Project/Project";
+import Education from "../Education/Education";
 
 const Home = () => {
   return (
@@ -21,7 +23,7 @@ const Home = () => {
       <div className=" px-5 md:px-36 py-10 aboutmeBgColor" id="about">
         <AboutMe2 />
       </div>
-      <div className="px-5 md:px-36 py-10 aboutmeBgColor">
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="experience">
         <Experience />
       </div>
       <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="service">
@@ -32,6 +34,14 @@ const Home = () => {
       </div>
       <div className="p-2 md:p-10 aboutmeBgColor flex justify-start md:justify-center ">
         <SkillLoading />
+      </div>
+
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="project">
+        <Project />
+      </div>
+
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="education">
+        <Education />
       </div>
 
       <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="testimonial">
