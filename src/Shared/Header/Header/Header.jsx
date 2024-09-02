@@ -40,28 +40,32 @@ import sendEmail from "../../../JS-File/sendEmail";
 import goCall from "../../../JS-File/goCall";
 
 const Header = () => {
+  const handleCheck = (data) => {
+    console.log("Pess: ", data);
+  };
   return (
     <div className="sticky top-0">
-      <div className="bg-[#F3F9FF] h-[100vh] w-full flex flex-col items-center text-black  overflow-hidden relative  ">
-        <div className="mt-10 mb-8 ">
-          <Link to={"banner"} smooth={true} className="cursor-pointer">
+      <div className="bg-[#F3F9FF] h-[100vh] w-full flex flex-col items-center text-black overflow-hidden relative">
+        <div className="mt-10 mb-8">
+          <Link to={"banner"} smooth={true} className="cursor-pointer z-10">
             <div>
               <img
                 src={logoImage}
                 alt=""
-                className="w-[180px] h-[180px] rounded-full"
+                className="w-[150px] h-[150px] rounded-full"
               />
             </div>
           </Link>
-          <h1 className="text-center mt-2 font-bold text-[24px] animate-text resizeForHeader">
+          <h1 className="text-center mt-2 font-bold text-[24px] animate-text resizeForHeader z-10">
             Suvrodeb
           </h1>
         </div>
 
-        <div className="flex flex-col gap-1  ">
+        {/* Link start */}
+        <div className="flex flex-col gap-1 z-10">
+          {/* Link Items */}
           <div className="flex gap-2 items-center">
             <HomeIcon className="opacity-50" />
-
             <Link
               to="banner"
               smooth={true}
@@ -83,19 +87,7 @@ const Header = () => {
           </div>
 
           <div className="flex gap-2 items-center">
-            <ManageAccountsIcon className="opacity-50" />
-
-            <Link
-              to="service"
-              smooth={true}
-              className="cursor-pointer u-line-effect"
-            >
-              Service
-            </Link>
-          </div>
-
-          <div className="flex gap-2 items-center">
-            <TungstenIcon className="opacity-50 rotate-180" />
+            <InfoIcon className="opacity-50" />
             <Link
               to="skill"
               smooth={true}
@@ -106,24 +98,13 @@ const Header = () => {
           </div>
 
           <div className="flex gap-2 items-center">
-            <EventNoteIcon className="opacity-50" />
+            <ManageAccountsIcon className="opacity-50" />
             <Link
-              to="testimonial"
+              to="service"
               smooth={true}
               className="cursor-pointer u-line-effect"
             >
-              Testimonial
-            </Link>
-          </div>
-
-          <div className="flex gap-2 items-center">
-            <AttachMoneyIcon className=" opacity-50" />
-            <Link
-              to="price"
-              smooth={true}
-              className="cursor-pointer u-line-effect"
-            >
-              Price
+              Service
             </Link>
           </div>
 
@@ -132,32 +113,43 @@ const Header = () => {
             <Link
               to="blog"
               smooth={true}
-              className="cursor-pointer  u-line-effect"
+              className="cursor-pointer u-line-effect"
             >
               Blog
             </Link>
           </div>
-
           <div className="flex gap-2 items-center">
             <EmailIcon className="opacity-50" />
             <Link
               to="contact"
               smooth={true}
-              className="cursor-pointer  u-line-effect"
+              className="cursor-pointer u-line-effect"
             >
               Contact
             </Link>
           </div>
+
+          {/* Other Links */}
+          {/* ... */}
         </div>
+        {/* Link End */}
+
+        {/* <button
+          className="btn btn-primary z-50"
+          onClick={() => handleCheck("1st")}
+        >
+          Press
+        </button> */}
 
         {/* Icon Start */}
-        <div className="flex gap-4 items-center mt-8">
-          <Link
-            to=""
-            onClick={() => goLink("https://www.facebook.com/suvrodev.1122")}
-          >
-            <FaFacebookF />
-          </Link>
+        <div
+          className="flex gap-4 items-center mt-8 z-40"
+          onClick={() => handleCheck()}
+        >
+          <div onClick={() => goLink("https://www.facebook.com/suvrodev.1122")}>
+            <FaFacebookF onClick={() => handleCheck()} />
+          </div>
+
           <Link to="" onClick={() => goLink("https://x.com/suvrodev1408")}>
             <FaTwitter />
           </Link>
@@ -181,30 +173,31 @@ const Header = () => {
             <FaWhatsapp />
           </Link>
         </div>
-        {/* Icon end */}
+        {/* Icon End */}
 
-        <div className="">
-          <div className="pt-2 text-black text-[15px]">
-            <p>
-              <span className="font-bold">Email: </span>{" "}
-              <span onClick={() => sendEmail()}> suvrodeb.cse@gmail.com</span>
-            </p>
-            <p>
-              <span className="font-bold">Phone: </span>{" "}
-              <span onClick={() => goCall()}> +880 1951912997</span>
-            </p>
-          </div>
+        {/* Mail Number Start */}
+        <div className="pt-10 text-black text-[15px] z-10 text-center">
+          <p>
+            <span className="font-bold">Email: </span>
+            <span onClick={() => sendEmail()}> suvrodeb.cse@gmail.com</span>
+          </p>
+          <p>
+            <span className="font-bold">Phone: </span>
+            <span onClick={() => goCall()}> +880 1951912997</span>
+          </p>
         </div>
+        {/* Mail Number End */}
 
-        <div class="oceanHeader">
+        {/* Footer */}
+        <div className="absolute h-[100px] w-full bottom-0 flex justify-center z-0">
+          <h1 className="z-20 bottom-1 absolute text-white text-center">
+            Copyright © 2024 Suvrodeb <br /> All rights reserved.
+          </h1>
           <div>
-            <h1 className="z-20 px-5 bottom-1 absolute text-white text-center">
-              Copyright © 2024 Suvrodeb All rights reserved.
-            </h1>
+            <div className="waveHeader"></div>
+            <div className="waveHeader"></div>
+            <div className="waveHeader"></div>
           </div>
-          <div class="waveHeader"></div>
-          <div class="waveHeader"></div>
-          {/* <div class="waveHeader"></div> */}
         </div>
       </div>
     </div>
