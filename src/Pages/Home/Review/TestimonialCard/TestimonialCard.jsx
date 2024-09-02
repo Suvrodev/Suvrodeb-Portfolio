@@ -14,7 +14,7 @@ const TestimonialCard = ({ testimonial }) => {
       {/* Left Div */}
       <div className="w-full md:w-[20%] flex justify-center md:justify-between">
         <div className="flex items-center justify-center ">
-          <img src={image} alt="" className="w-[150px] h-[150px] z-10 " />
+          <img src={image} alt="" className="w-[140px] h-[140px] z-10 " />
         </div>
         <div className="h-full relative hidden md:flex items-center ">
           <div className="absolute w-[25px] h-[2px] pColor top-[50%] right-0"></div>

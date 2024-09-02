@@ -68,7 +68,7 @@ const NewPricing = () => {
                 Package
               </span>
             </h4>
-            <div className="">
+            <div className="card__details">
               <ul>
                 <li>
                   <CloseIcon className="font-bold  text-[#40DECF] text-2xl" />
