@@ -46,5 +46,13 @@
     "url": "https://unique-choux-1316b6.netlify.app/",
     "client": "https://github.com/Suvrodev/Dragon_News_Client",
     "server": "https://github.com/Suvrodev/Dragon_News_Server"
+  },
+  {
+    "id": "7",
+    "name": "Coffee Shop",
+    "image": "https://i.ibb.co/C1VHcrt/Coffee.png",
+    "url": "https://coffevista.netlify.app/",
+    "client": "https://github.com/Suvrodev/coffee-shop",
+    "server": "https://github.com/Suvrodev/coffe-shop-server"
   }
 ]
