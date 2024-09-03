@@ -18,8 +18,10 @@ import Blogs from "../Blogs/Blogs/Blogs";
 
 const Home = () => {
   return (
-    <div className="w-full" id="banner">
-      <Banner />
+    <div className="w-full overflow-auto" id="banner">
+      <div>
+        <Banner />
+      </div>
 
       <div className=" px-5 md:px-36 py-10 aboutmeBgColor" id="about">
         <AboutMe2 />
@@ -53,7 +55,10 @@ const Home = () => {
         <NewPricing />
       </div>
 
-      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="blog">
+      <div
+        className="px-5 md:px-36 py-10 overflow-hidden aboutmeBgColor"
+        id="blog"
+      >
         <Blogs />
       </div>
       <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="contact">

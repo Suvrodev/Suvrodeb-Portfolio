@@ -10,7 +10,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <h1 className="text-2xl font-bold pText mb-10">Blog</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {blogs.map((blog, idx) => (

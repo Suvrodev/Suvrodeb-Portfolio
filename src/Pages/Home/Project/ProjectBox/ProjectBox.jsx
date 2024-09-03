@@ -11,7 +11,7 @@ const ProjectBox = ({ project }) => {
   return (
     <div className="rounded-md p-2 border-[2px] projectBoxBG">
       <div className="flex flex-col items-center">
-        <div className="relative w-full h-80 overflow-hidden border-2 border-gray-300 rounded">
+        <div className="relative w-full h-60 overflow-hidden border-2 border-gray-300 rounded">
           <img
             src={image}
             alt="Scrollable"
@@ -23,13 +23,13 @@ const ProjectBox = ({ project }) => {
           <div className="info ">
             <div className="grid grid-cols-3 gap-2">
               <div className="relative rounded-lg inline-flex items-center justify-start px-7 mt-5 py-1 overflow-hidden font-medium transition-all bg-gradient-to-r from-emerald-500 to-blue-500 hover:bg-white group">
-                <span className="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                <span className="w-48 h-28 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                 <span className="relative w-full  text-black transition-colors duration-300 ease-in-out group-hover:text-white flex gap-2 justify-center">
                   {/* <span className="text-[14px] font-bold">Live</span> */}
                   <img
                     src={chromeImage}
                     alt=""
-                    className="w-[25px] h-[25px]"
+                    className="w-[25px] h-[20px]"
                     onClick={() => goLink(url)}
                   />
                 </span>

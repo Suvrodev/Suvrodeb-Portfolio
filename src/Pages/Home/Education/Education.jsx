@@ -31,7 +31,7 @@ const Education = () => {
             ))}
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex items-center justify-center">
+        <div className="w-full md:w-1/2 flex items-start justify-center">
           <Lottie
             animationData={study2}
             loop={true}
