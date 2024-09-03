@@ -40,13 +40,13 @@ const Progressbar = ({ title, percentage }) => {
     progressContainer: {
       width: "100%",
       height: "10px",
-      backgroundColor: "#23263E",
+      backgroundColor: "#1E2125",
       borderRadius: "5px",
       overflow: "hidden",
     },
     progressBar: {
       height: "100%",
-      backgroundColor: "#30937E",
+      background: "linear-gradient(to right, #6D67CC, #B3659C, #F8636D)",
       borderRadius: "5px 0 0 5px",
       width: "0%",
       transition: "width 2s",

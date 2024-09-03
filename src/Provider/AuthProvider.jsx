@@ -82,7 +82,7 @@ const AuthProvider = ({ children }) => {
       });
     }
   }, [mail, localstorageDep]);
-  console.log("Current DB User: ", dbUser);
+  // console.log("Current DB User: ", dbUser);
 
   /**
    * Check db User end

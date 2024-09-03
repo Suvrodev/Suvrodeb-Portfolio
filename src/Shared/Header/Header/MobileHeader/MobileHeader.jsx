@@ -8,7 +8,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import me from "../../../../assets/HeaderImage/myLogo.png";
 import MobileHeaderOption from "./MobileHeaderOption/MobileHeaderOption";
 
-
 const MobileHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -40,3 +39,6 @@ const MobileHeader = () => {
 };
 
 export default MobileHeader;
+
+///1A1443
+//0F172A

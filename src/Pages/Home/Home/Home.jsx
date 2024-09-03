@@ -14,6 +14,7 @@ import AboutMe2 from "../AboutMe_Second/AboutMe2";
 import LeftSocialIcon from "../UtilitiesPages/LeftSocialIcon/LeftSocialIcon";
 import Project from "../Project/Project/Project";
 import Education from "../Education/Education";
+import Blogs from "../Blogs/Blogs/Blogs";
 
 const Home = () => {
   return (
@@ -50,6 +51,10 @@ const Home = () => {
 
       <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="price">
         <NewPricing />
+      </div>
+
+      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="blog">
+        <Blogs />
       </div>
       <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="contact">
         <Contact />
