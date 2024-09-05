@@ -36,7 +36,7 @@
     "name": "Bistro Boss",
     "image": "https://i.ibb.co/LQJtDcn/Bistro-Boss.png",
     "url": "https://mybistroboss.netlify.app/home",
-    "client": "https://radiant-kitsune-d7e6d2.netlify.app/home",
+    "client": "https://github.com/Suvrodev/Bistro_Client",
     "server": "https://github.com/Suvrodev/bistro-server"
   },
   {
