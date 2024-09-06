@@ -26,16 +26,16 @@ const Home = () => {
       <div className=" px-5 md:px-36 py-10 aboutmeBgColor" id="about">
         <AboutMe2 />
       </div>
-      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="experience">
+      <div className="px-5 md:px-36 py-10 sColor " id="experience">
         <Experience />
       </div>
       <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="service">
         <MyService />
       </div>
-      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="skill">
+      <div className="px-5 md:px-36 py-10 sColor" id="skill">
         <Skill />
       </div>
-      <div className="p-2 md:p-10 aboutmeBgColor flex justify-start md:justify-center ">
+      <div className="p-2 md:p-10 sColor flex justify-start md:justify-center ">
         <SkillLoading />
       </div>
 
@@ -43,7 +43,7 @@ const Home = () => {
         <Project />
       </div>
 
-      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="education">
+      <div className="px-5 md:px-36 py-10 sColor" id="education">
         <Education />
       </div>
 
@@ -51,7 +51,7 @@ const Home = () => {
         <Review />
       </div>
 
-      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="price">
+      <div className="px-5 md:px-36 py-10 sColor" id="price">
         <NewPricing />
       </div>
 
@@ -61,7 +61,7 @@ const Home = () => {
       >
         <Blogs />
       </div>
-      <div className="px-5 md:px-36 py-10 aboutmeBgColor" id="contact">
+      <div className="px-5 md:px-36 py-10 sColor" id="contact">
         <Contact />
       </div>
     </div>

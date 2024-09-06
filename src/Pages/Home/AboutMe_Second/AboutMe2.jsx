@@ -53,8 +53,8 @@ const AboutMe2 = () => {
             <h1 className="aboutTitle">
               Hi I'm <span>Suvrodeb</span>{" "}
             </h1>
-            <div className="flex gap-4">
-              <h1 className="aboutTitleDesc">a </h1>
+            <div className="flex gap-4 ">
+              <h1 className="aboutTitleDesc">I'm a </h1>
               {
                 <span className="aboutTitleDesc">
                   {/* Style will be inherited from the parent element */}
@@ -76,17 +76,26 @@ const AboutMe2 = () => {
             </div>
           </div>
           <h1 className="text-2xl font-bold pText uppercase my-4">-About Me</h1>
-          <p>
-            I’m a web designer and developer with a great passion for building
-            things with code. I live in beautiful Barisal in the southwest of
-            Bangladesh, where I create amazing websites design and develope.
-            just like you are gonna see in one of my portfolio website.
+          <p className="text-justify">
+            I am a highly skilled MERN stack developer specializing in{" "}
+            <span className="text-[#ff014f] ">
+              {" "}
+              HTML5, CSS, Bootstrap, Tailwind CSS, JavaScript, Typesvript,
+              React, Next js, Express js, MongoDB, Mongoose, Google Firebase{" "}
+            </span>
+            and I also familiar with{" "}
+            <span className="text-[#3E58D7]">Vue.js, react native</span> . With
+            a commitment to excellence and a strong work ethic, I ensure
+            top-quality, responsive, and efficient web solutions tailored to
+            client needs. I approach every project with diligence, aiming to
+            deliver robust and scalable applications. Let's collaborate to bring
+            your vision to life with professional precision and dedication.
           </p>
-          <p className="mt-4">
+          {/* <p className="mt-4">
             I have a lot of skills Html5, Css3, Sass, Bootstrap, Tailwind,
             JavaScript, React.js and Redux, and i also familiar with Vue.js
             Node.js, and MongoDB.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

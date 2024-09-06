@@ -49,14 +49,14 @@ const AboutMe = () => {
             ))} */}
           </div>
         </div>
-        <div className="w-full md:w-1/2 ">
+        <div className="w-full md:w-1/2 bg-green-400">
           <div>
-            <span className="subTitle">Welcome to my world</span>
+            {/* <span className="subTitle">Welcome to my world</span> */}
             <h1 className="aboutTitle">
               Hi I'm <span>Suvrodeb</span>{" "}
             </h1>
             <div className="flex gap-4">
-              <h1 className="aboutTitleDesc">a </h1>
+              <h1 className="aboutTitleDesc">I'm a </h1>
               {
                 <span className="aboutTitleDesc">
                   {/* Style will be inherited from the parent element */}
@@ -85,9 +85,18 @@ const AboutMe = () => {
             just like you are gonna see in one of my portfolio website.
           </p>
           <p className="mt-4">
-            I have a lot of skills Html5, Css3, Sass, Bootstrap, Tailwind,
+            {/* I am a highly skilled MERN stack developer specializing in HTML5,
+            CSS, Bootstrap, Tailwind CSS, JavaScript, React, Express, MongoDB,
+            and Google Firebase. With a commitment to excellence and a strong
+            work ethic, I ensure top-quality, responsive, and efficient web
+            solutions tailored to client needs. I approach every project with
+            diligence, aiming to deliver robust and scalable applications. Let's
+            collaborate to bring your vision to life with professional precision
+            and dedication */}
+
+            {/* I have a lot of skills Html5, Css3, Sass, Bootstrap, Tailwind,
             JavaScript, React.js and Redux, and i also familiar with Vue.js
-            Node.js, and MongoDB.
+            Node.js, and MongoDB. */}
           </p>
         </div>
       </div>
