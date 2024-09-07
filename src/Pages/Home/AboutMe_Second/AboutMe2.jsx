@@ -80,7 +80,7 @@ const AboutMe2 = () => {
             I am a highly skilled MERN stack developer specializing in{" "}
             <span className="text-[#ff014f] ">
               {" "}
-              HTML5, CSS, Bootstrap, Tailwind CSS, JavaScript, Typesvript,
+              HTML5, CSS, Bootstrap, Tailwind CSS, JavaScript, TypeScript,
               React, Next js, Express js, MongoDB, Mongoose, Google Firebase{" "}
             </span>
             and I also familiar with{" "}

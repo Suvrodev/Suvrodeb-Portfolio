@@ -102,6 +102,14 @@ const AuthProvider = ({ children }) => {
     });
   };
 
+  const errorToast = (text) => {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: text,
+    });
+  };
+
   /**
    * Successfully Toast end
    */
@@ -116,6 +124,7 @@ const AuthProvider = ({ children }) => {
     handleLogIn,
     handleLogOut,
     successfullToast,
+    errorToast,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

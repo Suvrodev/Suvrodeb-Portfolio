@@ -6,11 +6,34 @@ import Lottie from "lottie-react";
 import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Contact = () => {
-  const { successfullToast } = useContext(AuthContext);
+  const { successfullToast, errorToast } = useContext(AuthContext);
 
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const Form = e.target;
+    const name = Form.user_name.value;
+    const email = Form.user_email.value;
+    const message = Form.message.value;
+
+    if (!name) {
+      errorToast("Please Provide your name");
+      return;
+    }
+    if (!email) {
+      errorToast("Please Provide your gmail");
+      return;
+    }
+    if (!email.includes("@gmail.com")) {
+      errorToast("Please provide valid gmail");
+      return;
+    }
+    if (!message) {
+      errorToast("Please Write Your message");
+      return;
+    }
+    // console.log("Name: ", name, "Email: ", email, "Message: ", message);
 
     emailjs
       .sendForm("service_d4pyq16", "template_aovt5cz", form.current, {
