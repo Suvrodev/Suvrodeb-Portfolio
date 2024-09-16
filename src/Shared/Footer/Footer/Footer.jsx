@@ -78,11 +78,9 @@ const Footer = () => {
             </button>
           </div>
 
-          <div>
-            <h1 className="text-[24px] text-white font-bold mb-8">
-              Contact Detail
-            </h1>
-            <div className="flex items-center">
+          <div className="text-white">
+            <h1 className="text-[24px]  font-bold mb-8">Contact Detail</h1>
+            <div className="flex items-center ">
               <div className="u-line-effect">
                 <PhoneForwardedIcon />{" "}
                 <span onClick={() => goCall()}>+880 1951912997</span>
@@ -96,7 +94,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="text-white">
             <h1 className="text-[24px] text-white font-bold mb-8">
               Quick Links
             </h1>
@@ -149,7 +147,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="text-white">
             <h1 className="text-[24px] text-white font-bold mb-8">
               Our Services
             </h1>

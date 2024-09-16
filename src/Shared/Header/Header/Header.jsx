@@ -166,10 +166,7 @@ const Header = () => {
             <GitHubIcon />
           </Link>
 
-          <Link
-            to=""
-            onClick={() => goLink("https://wa.me/message/V3FSQYVKY6HQL1")}
-          >
+          <Link to="" onClick={() => goLink("https://Wa.me/+8801518748081")}>
             <FaWhatsapp />
           </Link>
         </div>

@@ -8,13 +8,10 @@ import CloseIcon from "@mui/icons-material/Close";
 const NewPricing = () => {
   return (
     <div
-      className="section-pricing -mb-[150px] md:mb-[350px]  md:w-full lg:w-[1000px] mx-auto"
+      className="section-pricing -mb-[150px] md:mb-[350px]  md:w-full lg:w-[1000px] mx-auto h-auto md:h-[550px]"
       id="pricing"
     >
-      <div className="heading-secondary u-margin-bottom-md">
-        <span className="heading-secondary-sub">- My Plan!</span>
-        <span className="heading-secondary-main">My Scope &amp; Pricing!</span>
-      </div>
+      <h1 className="text-2xl font-bold pText mb-10">Pricing</h1>
       <div className="card-item">
         <div className="card card-one">
           <div className="card__side card__side--front">
